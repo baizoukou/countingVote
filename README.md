@@ -1,4 +1,6 @@
-# countingVote  -- input from the user will include both the votes ---
+# countingVote  
+
+-- input from the user will include both the votes ---
 
 1. Your own choice.. You will need to discuss this with me and could be, for
 instance, part of your final year project. (If you choose to do this, and
