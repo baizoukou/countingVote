@@ -9,7 +9,7 @@ import Data.List (sortBy, maximumBy)
 type Weight = Float
 
 data Vote = Vote  Weight Int [Int]
-  deriving (Show, Eq, Ord) 
+  deriving (Show, Eq, Ord)
 
 
 -- shorthand for filtering out  an element of a list

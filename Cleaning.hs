@@ -18,8 +18,6 @@ removable xs = cv ls 1
      | c == n    = cv cs (n+1)
      | otherwise = l
    cv []     n = []
-
-
 -- Cleans votes
 clean :: [Int] -> [Int]
 clean xs = cn xs
