@@ -1,0 +1,64 @@
+-- This file has been generated from package.yaml by hpack version 0.20.0.
+--
+-- see: https://github.com/sol/hpack
+--
+-- hash: bba9beaeda54533980bfed1427fbbe5bfb384d60ae3e5ba3dab2aa35eff32343
+
+name:           countingVote
+version:        0.1.0.0
+description:    Please see the README on GitHub at <https://github.com/githubuser/stv#readme>
+homepage:       https://github.com/githubuser/stv#readme
+bug-reports:    https://github.com/githubuser/stv/issues
+author:         Author name here
+maintainer:     example@example.com
+copyright:      2020 Author name here
+license:        BSD3
+license-file:   LICENSE
+build-type:     Simple
+cabal-version:  >= 1.10
+
+extra-source-files:
+    ChangeLog.md
+    README.md
+
+source-repository head
+  type: git
+  location: https://github.com/githubuser/countingVote
+
+library
+  hs-source-dirs:   src
+  build-depends:    base >=4.7 && <5
+                    , split
+  exposed-modules:  Generic 
+                    , Adjust 
+                    , Cleaning
+                    , Votes
+  other-modules:    Paths_countingVote
+                   
+  default-language: Haskell2010
+
+executable countingVote-exe
+  main-is: Main.hs
+  hs-source-dirs:
+      app
+  ghc-options: -threaded -rtsopts -with-rtsopts=-N
+  build-depends:
+      base >=4.7 && <5
+    , countingVote
+    , directory
+  other-modules:
+      Paths_countingVote
+  default-language: Haskell2010
+
+test-suite countingVote-test
+  type: exitcode-stdio-1.0
+  main-is: Spec.hs
+  hs-source-dirs:
+      test
+  ghc-options: -threaded -rtsopts -with-rtsopts=-N
+  build-depends:
+      base >=4.7 && <5
+    , countingVote
+  other-modules:
+      Paths_countingVote
+  default-language: Haskell2010
